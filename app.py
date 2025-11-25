@@ -5,7 +5,7 @@ import numpy as np
 model = jb.load('heart_disease_model.pkl')
 scaler = jb.load('scaler.pkl')
 st.title("Heart Disease Prediction")
-st.image("C:\\Users\\ROY\\Downloads\\Understanding-How-Heart-Disease-Impacts-Your-Body.webp", use_column_width=True)
+st.image("https://www.pdcenterlv.com/wp-content/uploads/2019/07/heart-intro-photo-1.jpg")
 caption = "Human Heart Anatomy"
 st.caption(caption) 
 width = st.slider("Select the width of the image", 100, 800, 400)
@@ -32,4 +32,3 @@ if st.button("Heart Failure"):
         st.success("High Risk of Heart Failure")
     else:
         st.suceess("Low Risk of Heart Failure")
-        
